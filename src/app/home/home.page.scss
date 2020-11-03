@@ -1,27 +1,35 @@
-#container {
-  text-align: center;
+.header {
+  color: white;
+  --background: #9aae04;
+}
+.header-md::after {
+  display: none;
+}
 
+.button-circle {
+  color: white;
+  --background: linear-gradient(
+    45deg,
+    rgba(157, 174, 4, 1) 0%,
+    rgba(148, 170, 102, 1) 50%,
+    rgba(103, 133, 193, 1) 100%
+  );
+}
+
+.startButton {
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+  left: 86%;
+  top: 60%;
+  margin: -100px 0 0 -200px;
+  button {
+    height: 40px;
+    border-radius: 9px;
+    color: white;
+    background: linear-gradient(
+      45deg,
+      rgba(157, 174, 4, 1) 0%,
+      rgba(148, 170, 102, 1) 50%,
+      rgba(103, 133, 193, 1) 100%
+    );
+  }
 }
